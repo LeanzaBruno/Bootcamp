@@ -4,6 +4,7 @@
 body{
     width: 60%;
     margin: auto;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #0a2ff1; 
 }
@@ -22,6 +23,7 @@ p{
 
 .image{
     width: 300px;
+    height: auto;
     background-image: url(img/fondo.JPG);
     background-repeat: repeat-x;
     background-position: 0;
