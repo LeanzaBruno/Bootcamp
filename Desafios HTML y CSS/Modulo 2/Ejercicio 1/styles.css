@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 
+:root{
+    --pt-to-px: 1.33px; /* 1 pt = 1.33 px */
+}
+
 body{
     width: 60%;
     margin: auto;
@@ -10,11 +14,11 @@ body{
 }
 
 h1{
-    font-size: 79px;
+    font-size: calc(59 * var(--pt-to-px)); /* hago la conversion de unidades directamente acá usando la funcion calc */
 }
 
 p{
-    font-size: 31px;
+    font-size: calc(23 * var(--pt-to-px));
 }
 
 .highlight{
