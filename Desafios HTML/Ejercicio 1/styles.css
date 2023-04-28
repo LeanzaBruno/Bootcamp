@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=MuseoModerno:wght@700&display=swap');
+
+:root{
+    /* colors */
+    --background-color: #edf7ff;
+    --hashtag-color: #8a9af1;
+    --title-color: #0a2ff1;
+    --text-color: #04146c;
+
+    /* font sizes */
+    --h1-size: 199px;
+    --h2-size: 117px;
+    --h3-size: 52px;
+    --h4-size: 48px;
+    --text-size: 31px;
+}
+
+html{
+    background-color: var(--background-color);
+}
+
+main{
+    width: 805px;
+    margin-left: 153px;
+}
+
+h1{
+    color: var(--hashtag-color);
+    font-size: var(--h1-size);
+    margin: 0;
+}
+
+h2, h3, h4{
+    color: var(--title-color);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    line-height: 70px;
+    list-style-position: inside;
+}
+
+p, li{
+    color: var(--text-color);
+    font-size: var(--text-size);
+    margin-left: 0;
+}
+
+p{
+    line-height: 50px;
+}
+
+h1, h2, h4{
+    font-family: 'MuseoModerno', cursive;
+    font-weight: bold;
+}
+
+h3, p {
+    font-family: 'Asap', sans-serif;
+    font-weight: normal;
+}
+
+strong, li{
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+h2{ 
+    font-size: var(--h2-size);
+    line-height: 100px;
+    margin: 100px 0 0 0;
+}
+
+h3{ 
+    font-size: var(--h3-size);
+    margin: 0 0 100px 0;
+}
+
+h4{ 
+    font-size: var(--h4-size);
+    margin: 100px 0 0 0;
+}
