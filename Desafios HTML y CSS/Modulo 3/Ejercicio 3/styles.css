@@ -4,46 +4,69 @@
     --pt-to-px: 1.33px;
 }
 
-.sign-in-form{
-    margin: auto;
-    font-family: 'Mulish', sans-serif;
-    text-align: center;
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.recuadro{
+    width: 600px;
     border: 1px solid #ccd3ff;
 }
 
-.sign-in-form h3{
+form{
+    width: 500px;
+    margin: auto;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+}
+
+h3{
     font-size: calc(18 * var(--pt-to-px));
     color: #04146c;
 }
 
-.sign-in-form input, .sign-in-form hr{
+input, hr{
+    box-sizing: border-box;
+    margin-bottom: 10px;
     width: 500px;
 }
 
-.sign-in-form input, .sign-in-form a{
-    font-size: calc(14 * var(--pt-to-px));
-}
-
-.sign-in-form hr{
-    margin: 20px auto;
-}
-
-.sign-in-form a{
-    margin: 20px 0;
-}
-
-.sign-in-form input{
+input{
     display: block;
-    box-sizing: border-box;
     height: 50px;
-    margin: auto auto 10px auto;
     padding: 10px;
 }
 
-.sign-in-form input[type=button]{
+input, a{
+    font-size: calc(14 * var(--pt-to-px));
+}
+
+a{
+    display: inline-block;
+    margin: 0 0 15px 0;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type=button]{
+    font-family: 'Mulish', sans-serif;
     color: white;
     background-color: #0a2ff1;
     font-weight: 600;
     font-size: calc(15 * var(--pt-to-px));
     border: 1px solid black;
+}
+
+input[type=button]:active{
+    background-color: white;
+    color: black;
 }
