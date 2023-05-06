@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --pt-to-px: 1.33px;
+}
+
+/* -- COMMON ELEMENTS-- */
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, button{
+    font-family: 'Roboto Slab', serif;
+}
+
+h3, p, h4, label, input{
+    font-family: var(--text-font);
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    border-top: 30px solid #3859ed;
+    font-size: calc(18 * var(--pt-to-px));
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+header img{
+    width: 5%;
+}
+
+header a{
+    color: #04146c;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 40px;
+}
+
+.activo{
+    font-weight: bold;
+}
+
+
+/* --HOME PAGE-- */
+
+.home-page main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.upper-main h1{
+    font-size: calc(72 * var(--pt-to-px));
+    color: #0a2ff1;
+    margin-bottom: 0px;
+}
+
+.upper-main h3{
+    font-size: calc(26 * var(--pt-to-px));
+    color: #04146c;
+}
+
+.upper-main img{
+    width: 100%;
+}
+
+.lower-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-main img{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptions{
+    width: 50%;
+    text-align: left;
+    margin: 0 0 0 100px;
+}
+
+.descriptions h2{
+    font-size: calc(34 * var(--pt-to-px));
+    color: #04146c;
+}
+
+.descriptions h4{
+    font-size: calc(18 * var(--pt-to-px));
+    color: #04146c;
+    margin: 0;
+}
+
+.descriptions p{
+    width: 80%;
+    font-size: calc(18 * var(--pt-to-px));
+    color: #04146c;
+    margin-top: 0;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #3957f1;
+    align-self: flex-end;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer img{
+    width: 10%;
+    margin: 30px 0 30px 100px;
+}
+/* --CONTACT PAGE-- */
+
+.contact-page main {
+    text-align: left;
+    margin: 0 30px;
+    max-width: 100%;
+}
+
+.contact-page h1{
+    font-family: 'Roboto Slab', serif;
+    color: #2c00cc; 
+    font-size: calc(34 * var(--pt-to-px));
+}
+
+.contact-page p{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(23 * var(--pt-to-px));
+    color: var(--text-color);
+}
+
+.contact-page form{
+    font-size: calc(23 * var(--pt-to-px));
+    display: flex;
+    width: 500px;
+    margin: 30px 0;
+    flex-direction: column;
+}
+
+.contact-page label{
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.contact-page input, .contact-page textarea{
+    width: 500px;
+    margin: 0;
+    font-size: calc(23 * var(--pt-to-px));
+}
+
+.contact-page input{
+    height: 50px;
+}
+
+.contact-page textarea{
+    height: 100px;
+}
+
+.form-buttons{
+    margin: 20px 0;
+}
+
+.contact-page button{
+    display: inline;
+    width: 150px;
+    font-size: calc(24 * var(--pt-to-px));
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+}
+
+.reset-button{
+    background-color: #f98500 ;
+}
+
+.submit-button{
+    background-color: #2c00cc;
+}
