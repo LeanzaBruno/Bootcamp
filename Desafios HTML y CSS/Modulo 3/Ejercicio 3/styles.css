@@ -4,6 +4,10 @@
     --pt-to-px: 1.33px;
 }
 
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -11,15 +15,14 @@ body{
     align-items: center;
 }
 
-.recuadro{
+.frame{
     width: 600px;
     border: 1px solid #ccd3ff;
 }
 
-form{
+.login-form, .links{
     width: 500px;
     margin: auto;
-    font-family: 'Mulish', sans-serif;
     text-align: center;
 }
 
@@ -28,19 +31,19 @@ h3{
     color: #04146c;
 }
 
-input, hr{
+input, button, hr{
     box-sizing: border-box;
     margin-bottom: 10px;
     width: 500px;
 }
 
-input{
+input, button{
     display: block;
     height: 50px;
     padding: 10px;
 }
 
-input, a{
+input, button, a{
     font-size: calc(14 * var(--pt-to-px));
 }
 
@@ -59,8 +62,7 @@ hr{
     margin: 10px 0;
 }
 
-input[type=button]{
-    font-family: 'Mulish', sans-serif;
+button{
     color: white;
     background-color: #0a2ff1;
     font-weight: 600;
@@ -68,7 +70,7 @@ input[type=button]{
     border: 1px solid black;
 }
 
-input[type=button]:active{
+button:active{
     background-color: white;
     color: black;
 }
