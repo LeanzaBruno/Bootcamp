@@ -18,14 +18,14 @@ body{
 }
 
 .form-container{
-    width: 50%;
+    width: 700px;
     height: 450px;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("img/M4-desafio1-fondo-form.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 form {
