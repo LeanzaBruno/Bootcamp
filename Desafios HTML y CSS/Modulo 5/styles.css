@@ -45,7 +45,6 @@ header a{
 /* FOOTER */
 
 footer{
-    position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -70,7 +69,6 @@ h3, p, h4, label, input{
 .home-page main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -91,19 +89,7 @@ h3, p, h4, label, input{
 
 .lower-main{
     display: flex;
-}
-
-.aside-image{
-    width: 50%;
-    margin: 0;
-    padding: 0;
-}
-
-.lower-main img{
-    width: 100%;
-    margin: 0;
-    margin-bottom: -10px;
-    padding: 0;
+    justify-content: flex-end;
 }
 
 .advantages{
@@ -128,6 +114,14 @@ h3, p, h4, label, input{
     font-size: calc(18 * var(--pt-to-px));
     color: #04146c;
     margin-top: 0;
+}
+
+aside{
+    width: 50%;
+    background-image: url("img/M5-Desafio3-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
 /* --CONTACT PAGE-- */
