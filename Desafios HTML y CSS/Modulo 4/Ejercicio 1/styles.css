@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
+:root{
+	--pt-to-px: 1.33px;
+}
+
 * {
     font-family: 'Mulish', sans-serif;
 }
@@ -36,7 +40,7 @@ form {
 }
 
 h1{
-    font-size: calc(24.48 * 1.33px);
+    font-size: calc(24.48 * var(--pt-to-px));
 }
 
 input, button{
@@ -44,7 +48,7 @@ input, button{
     height: 50px;
     padding: 10px;
     margin: 0 0 10px 0;
-    font-size: calc(17 * 1.33px);
+    font-size: calc(17 * var(--pt-to-px));
 }
 
 input {
