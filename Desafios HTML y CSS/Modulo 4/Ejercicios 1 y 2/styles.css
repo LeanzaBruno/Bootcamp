@@ -18,7 +18,8 @@ body{
 }
 
 .form-container{
-    width: 700px;
+    width: 50%;
+    min-width: 700px;
     height: 450px;
     display: flex;
     justify-content: center;
