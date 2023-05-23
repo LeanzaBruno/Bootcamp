@@ -1,0 +1,29 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3.33rem;
+    color: #3957f1;
+}
+
+.figure-caption{
+    width: 100%;
+    display: block;
+    color: #15163d;
+    font-size: 1.75rem; 
+}
+
+@media (max-width: 992px){
+    h1{ font-size: 2.5rem; }
+    .figure-caption{ font-size: 1.25rem; }
+}
+
+@media (max-width: 768px){
+    h1{ font-size: 2.0rem; }
+}
