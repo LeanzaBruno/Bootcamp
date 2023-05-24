@@ -8,22 +8,58 @@ body{
 
 h1{
     font-weight: bold;
-    font-size: 3.33rem;
     color: #3957f1;
 }
 
-.figure-caption{
+.figure{
+    box-shadow: 2px 2px 4px gray;
+}
+
+.figure img{
     width: 100%;
-    display: block;
+}
+
+.figure-caption{
     color: #15163d;
-    font-size: 1.75rem; 
+    vertical-align: middle;
 }
 
-@media (max-width: 992px){
-    h1{ font-size: 2.5rem; }
-    .figure-caption{ font-size: 1.25rem; }
+@media (min-width: 992px){      // 992px <= width 
+    h1{
+        font-size: 3.33rem;
+    }
+
+    .figure{
+        width: 20vw;
+    }
+
+    .figure-caption{
+        color: #15163d;
+        font-size: 1.1rem; 
+    }
 }
 
-@media (max-width: 768px){
-    h1{ font-size: 2.0rem; }
+
+@media (max-width: 991px){      // 768px <= width < 992px
+    h1{ font-size: 3.0rem; }
+
+    .figure{
+        width: 40vw;
+    }
+
+    .figure-caption{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px){     // 0 <= width < 768px 
+    h1{ font-size: 4.0rem; }
+    .figure{
+        width: 80vw;
+
+    }
+
+    .figure-caption{
+        font-size: 1.5rem;
+    }
 }
