@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{ font-family: 'Mulish', sans-serif; }
+h1, h2 { font-weight: bold;}
+h1{ color: #0a2ff1; }
+
+.card{
+    border: 0;
+    justify-content: flex-end;
+
+    .card-title, .card-text { // Esto modifica al h2 y al p
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+    }
+    
+    .card-img-overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: calc($card-img-overlay-padding / 2);
+    }
+}
+
+@media (min-width: 992px){
+    h1{ 
+        //font-size: 90.6px;   -> Los valores comentados son los que pide el pdf
+        font-size: 4rem;
+    }
+
+    .card-title{ 
+        //font-size: 48px;
+        font-size: 1.1rem;
+    }
+
+    .card-text{ 
+        //font-size: 32px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 991px){
+    h1{ font-size: 4rem; }
+    .card-title{ font-size: 1.49rem; }
+    .card-text{ font-size: 1rem; }
+}
+
+@media (max-width: 767px){
+    h1{ font-size: 2.5rem; }
+    .card-title{ font-size: 1.4rem; }
+}
