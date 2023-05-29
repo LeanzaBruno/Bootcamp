@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,900;1,400&display=swap');
+
+*{ font-family: 'Source Sans Pro', sans-serif; }
+
+h1{ font-size: 82.66px; font-weight: 900; }
+
+p{ font-size: 21.33px; }
+
+h1, p{ color: #04146c; }
+
+button{ width: 150px; font-variant: small-caps; }
+
+.btn{ font-size: 18.67px; background-color: #04146c; }
+
+@media (min-width: 768px){ .img-fluid{ max-width: 80% } }
