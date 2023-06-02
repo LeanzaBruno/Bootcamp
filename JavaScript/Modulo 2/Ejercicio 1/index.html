@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        fieldset, legend{ all: revert }
+    </style>
+    <title>Solicitar edad</title>
+</head>
+<body>
+    <main class="container">
+        <form class="row needs-validation" id="date-form" novalidate>
+            <fieldset>
+            <legend>Ingrese su fecha de nacimiento</legend>
+            <div class="row justify-content-center align-items-end">
+                <div class="col position-relative">
+                    <label class="form-label" for="day">Día</label>
+                    <input class="form-control" type="number" id="day" name="day" min="1" required>
+                    <div class="invalid-tooltip" id="day-tooltip">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="month">Mes</label>
+                    <select class="form-select" id="month" name="month" required>
+                        <option value="0">Enero</option>
+                        <option value="1">Febrero</option>
+                        <option value="2">Marzo</option>
+                        <option value="3">Abril</option>
+                        <option value="4">Mayo</option>
+                        <option value="5">Junio</option>
+                        <option value="6">Julio</option>
+                        <option value="7">Agosto</option>
+                        <option value="8">Septiembre</option>
+                        <option value="9">Octubre</option>
+                        <option value="10">Noviembre</option>
+                        <option value="11">Diciembre</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="year">Año</label>
+                    <select class="form-select" id="year" name="year" required></select>
+                </div>
+            
+                <button class="col btn btn-primary me-3" type="submit">Verificar</button>
+            </div>
+            </fieldset>
+        </form>
+
+        <h1 hidden class="text-center" id="welcome-message">Bienvenido/a!</h1>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
